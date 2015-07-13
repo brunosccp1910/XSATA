@@ -1,0 +1,51 @@
+XSATA: REQUISITOS FUNCIONAIS
+
+OBJETIVO: Gerenciamento de reunioes, multipet, grupos de estudo... Organizaçõe$
+
+INFORMAÇÕES DE CADASTRO
+->cadastro: todos se cadastram (XSAUTH)
+->Usuários:
+    ->coordenador do grupo - nome do grupo, descrição, etc...
+        ->Tem preivilégios para editar o grupo (excluir pessoas)
+    ->participante do grupo: cadastra-se em um grupo já cadastrado
+    ->Qualquer usuário do sistema pode cadastrar um grupo
+
+
+MENUS:
+->Reuniões:
+    ->Pautas
+    ->Deliberações
+    ->Ata
+->Participantes do Grupo:
+    ->Todos os cadastrados
+    ->Se houver algum desconhecido, o coordenador pode exclui-lo
+->Consultas:
+    ->Todos os usuários podem consultar reuniões, deliberações e atas de reuniões somente do seu grupo
+    ->Todos os usuários podem consultar outros grupos
+
+
+INFORMAÇÕES PRINCIPAIS:
+Reuniões:
+    ->qqr um pode solicitar reunião: data, horário, título
+    ->edição de reuniões (prazo para editar reuniões (editável), pautas, )
+    ->busca as deliberações vencidas
+    ->coordenador pode incluir deliberações pendentes
+    ->flag: aconteceu em data X:
+        ->ATA:
+            ->coordenador então escreve algo sobre cada pauta ----> (topicos, informação sobre topicos, botao deliberação)
+            -> quem participou
+            ->->Escribas:
+                ->coordenador pode indicar um ou mais escribas para também editar a ata
+            ->Somente coordenador pode emitir ata
+Pautas:
+    ->todos do grupo olham que reuniões e pautas que foram criadas e sugerem pautas
+    ->ordenação da pauta (precisa ser ordenada pela coordenação do grupo)
+    ->Flag: discutida ou não discutida
+    ->texto livre sobre itens de pauta
+
+Deliberações: (tutor)
+    ->informações sobre deliberações (data máxima, um ou mais responsáveis do grupo (estando ou nao na reunião), descrição)
+
+
+Convites:
+->Um grupo pode convidar outros grupos ou participantes via e-mail. Mas isso somente após cadastrar a reunião. As informações sobre a reunião que serão passadas para estes convidados serão somente título, data e descrição da reunião.
